@@ -1,3 +1,5 @@
+bash/init/local.bash
+bash/profile/local.bash
 fish/fishd.mp
 guix/current
 

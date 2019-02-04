@@ -1,0 +1,17 @@
+#! /bin/sh
+
+CFGDIR=$(realpath $(dirname $BASH_SOURCE))
+function link() {
+  local DOTDIR_NAME=$(realpath $1)
+  local INSTALL_NAME=$(realpath $2)
+
+  if ! [ -e $INSTALL_NAME ]; then
+    ln -s $DOTDIR_NAME $INSTALL_NAME
+  fi
+}
+
+
+for file in $CFGDIR/*/install.sh; do
+  source $file
+done
+
