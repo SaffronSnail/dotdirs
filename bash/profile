@@ -1,0 +1,4 @@
+export GUIX_MODULE_PATH="$HOME/Modules/guix"
+export GUILE_LOAD_PATH="$HOME/Modules/guix"
+export SPACEMACSDIR=~/Documents/dotfiles
+
